@@ -1,0 +1,11 @@
+.venv/
+.venv_clean/
+__pycache__/
+*.pyc
+models/
+encoders/
+plots/
+reports/
+test_results_*.csv
+test_results_*.json
+streamlit.log
