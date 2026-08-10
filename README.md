@@ -1,4 +1,4 @@
-# SmartAgri v4 (VS Code Local Project)
+# SmartAgri v4
 
 SmartAgri is a multi-engine agriculture recommendation system that combines:
 - crop suitability ML,
