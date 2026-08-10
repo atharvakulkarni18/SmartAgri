@@ -87,16 +87,20 @@ For a fresh machine, run the helper script instead of typing each step manually:
 
 The script creates `.venv`, installs the requirements, and runs a quick import check.
 
-### 2.4 One-command project run
+## 2.5 Running the Web Application (SmartAgri UI)
 
-After setup, run the main non-interactive project flow with:
-
+### Option A: Using PowerShell script (Recommended)
 ```powershell
-.\run_all.ps1
+.\run_app.ps1
 ```
 
-This runs EDA, knowledge-layer generation, training, the batch harness, and evaluation.
-Use `v3_NB4_Pipeline.py` separately when you want the interactive recommendation flow.
+### Option B: Running via Streamlit directly
+```powershell
+streamlit run app.py
+```
+
+> **Note on fresh installations (GitHub clone):**
+> If you clone this repo without `models/`, `encoders/`, `plots/`, or `reports/` (as per `.gitignore`), the web app will **automatically detect missing files** on launch and execute the full training pipeline (`v3_NB1_EDA.py` to `v3_NB6_Evaluation.py`) before opening the interactive dashboard.
 
 ## 3) Required Data Files
 

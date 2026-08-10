@@ -76,10 +76,10 @@ crop_model = L(MODEL_DIR / f"{CROP_MDL[crop_model_name]}.pkl")
 fert_model = L(MODEL_DIR / f'{FERT_MDL.get(fert_model_name, "fert_rf")}.pkl')
 yield_model = L(MODEL_DIR / f'{YIELD_MDL.get(yield_model_name, "yield_xgb")}.pkl')
 
-print(f"✅ Crop  model : {crop_model_name}")
-print(f"✅ Fert  model : {fert_model_name}")
-print(f"✅ Yield model : {yield_model_name}")
-print(f"✅ District profiles: {len(DISTRICT_PROFILES)} districts")
+print(f"[OK] Crop  model : {crop_model_name}")
+print(f"[OK] Fert  model : {fert_model_name}")
+print(f"[OK] Yield model : {yield_model_name}")
+print(f"[OK] District profiles: {len(DISTRICT_PROFILES)} districts")
 
 
 W_SUITABILITY = 0.35
